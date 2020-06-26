@@ -12,7 +12,7 @@ namespace CosmosDBDemo.Controllers
     {
         public async Task<IActionResult> Index()
         {
-            var url = "https://230a0264-0ee0-4-231-b9ee.documents.azure.com:443/";
+            var url = "";
             var db = "Ecommerce";
             var key = "";
             CosmosClient client = new CosmosClient(url, key);
@@ -40,7 +40,7 @@ namespace CosmosDBDemo.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Products products)
         {
-            var url = "https://230a0264-0ee0-4-231-b9ee.documents.azure.com:443/";
+            var url = "";
             var db = "Ecommerce";
             var key = "";
             CosmosClient client = new CosmosClient(url, key);
