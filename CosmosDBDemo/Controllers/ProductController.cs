@@ -14,7 +14,7 @@ namespace CosmosDBDemo.Controllers
         {
             var url = "https://230a0264-0ee0-4-231-b9ee.documents.azure.com:443/";
             var db = "Ecommerce";
-            var key = "qJx4Msuv1yt6ie8ro5SytVbSYYEnN1rKbWXrYj9raWc3ckoKZ6spZNjiv2VBo0SSVhh8tExYWpovMikjpwzruA==";
+            var key = "";
             CosmosClient client = new CosmosClient(url, key);
             Database database = await client.CreateDatabaseIfNotExistsAsync(db);
             Container containers = await database.CreateContainerIfNotExistsAsync("Product", "/ProductId");
@@ -42,7 +42,7 @@ namespace CosmosDBDemo.Controllers
         {
             var url = "https://230a0264-0ee0-4-231-b9ee.documents.azure.com:443/";
             var db = "Ecommerce";
-            var key = "qJx4Msuv1yt6ie8ro5SytVbSYYEnN1rKbWXrYj9raWc3ckoKZ6spZNjiv2VBo0SSVhh8tExYWpovMikjpwzruA==";
+            var key = "";
             CosmosClient client = new CosmosClient(url, key);
             Database database = await client.CreateDatabaseIfNotExistsAsync(db);
             Container containers = await database.CreateContainerIfNotExistsAsync("Product", "/ProductId");
